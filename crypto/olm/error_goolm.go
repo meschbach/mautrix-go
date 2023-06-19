@@ -13,4 +13,7 @@ var (
 	ErrNotEnoughGoRandom  = errors.New("couldn't get enough randomness from crypto/rand")
 	ErrSignatureNotFound  = errors.New("input JSON doesn't contain signature from specified device")
 	ErrInputNotJSONString = errors.New("input doesn't look like a JSON string")
+
+	//TODO: common between error and error_goolm
+	UnknownMessageIndex = errors.New("attempt to decode a message whose index is earlier than our earliest known session key")
 )
